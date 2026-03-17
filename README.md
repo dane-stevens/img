@@ -23,6 +23,8 @@ u (required): URL of the source image. Must match allowed upstream origins.
 
 o (optional): Underscore-separated transformation operations.
 
+[Operations Cheatsheet](CHEATSHEET.md)
+
 ### Example:
 `GET /img?u=https://example.com/image.jpg&o=w-400_h-300_blur-5_webp`
 
