@@ -54,7 +54,7 @@ fastify.get('/img', {
       }
 
       if (!ALLOWED_FORMATS.includes(ops.format)) {
-        reply.code(502)
+        reply.code(403)
         return { error: 'Format not accepted' }
       }
       const transformer = applySharpOps(sharp(), ops)
