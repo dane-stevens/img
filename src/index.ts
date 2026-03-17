@@ -59,7 +59,7 @@ fastify.get('/img', {
       }
       const transformer = applySharpOps(sharp(), ops)
 
-      reply.header('Content-Type', `image/${ops.format || 'jpeg'}`)
+      reply.header('Content-Type', `image/${ops.format}`)
       reply.header('Cache-Control', 'public, max-age=31536000, immutable')
 
       await pipeline(nodeStream, transformer, reply.raw)
