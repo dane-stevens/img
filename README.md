@@ -70,5 +70,5 @@ Maximum upstream fetch timeout: 5 seconds.
 Maximum width: 2000px (can be adjusted in MAX_WIDTH).
 
 ## License
-
+[O'Saasy License](LICENSE.md) - Basically… the MIT do-whatever-you-want license, but with the commercial rights for SaaS reserved for the copyright holder.
 
