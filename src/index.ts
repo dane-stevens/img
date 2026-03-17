@@ -23,6 +23,9 @@ fastify.get('/', function (request, reply) {
   }
 
 })
+fastify.get('/_health', function (request, reply) {
+  return 'OK'
+})
 
 fastify.get('/img', {
   handler: async (request, reply) => {
