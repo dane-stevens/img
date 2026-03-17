@@ -85,7 +85,7 @@ fastify.get('/img', {
       required: ['u'],
       properties: {
         u: { type: 'string' },
-        t: { type: 'string' }
+        o: { type: 'string' }
       }
     }
   }
