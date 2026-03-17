@@ -36,7 +36,7 @@ fastify.get('/img', {
       const parts = o?.split('_')
 
       const tokens = parts
-      const ops = parseTokens(tokens)
+      const ops = parseTokens(tokens || [])
 
       const parsed = new URL(u)
       if (!env.ALLOWED_UPSTREAM_ORIGINS.includes(parsed.hostname)) {
