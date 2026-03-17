@@ -15,7 +15,7 @@ Comma-separated list
 - ALLOWED_UPSTREAM_ORIGINS=example.com,example2.com
 
 ## API Endpoints
-GET /img?u=<IMAGE_URL>&o=<OPERATIONS>
+GET `/img?u=<IMAGE_URL>&o=<OPERATIONS>`
 
 | Operation            | Description                                   | Example                 |
 | -------------------- | --------------------------------------------- | ----------------------- |
