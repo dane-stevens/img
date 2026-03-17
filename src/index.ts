@@ -17,6 +17,12 @@ function getPreferredFormat(acceptHeader: string | undefined) {
   return 'jpeg'
 }
 
+fastify.get('/', function (request, reply) {
+  return {
+    message: 'hello world'
+  }
+
+})
 
 fastify.get('/img', {
   handler: async (request, reply) => {
