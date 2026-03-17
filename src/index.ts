@@ -134,19 +134,31 @@ function parseTokens(tokens: string) {
     console.log({ selector, value, restValues })
 
     if (selector === 'size' && value) {
-      ops.resize.width = parseSize(value)
-      ops.resize.height = parseSize(value)
+      ops.resize = {
+        ...ops.resize,
+        width: parseSize(value),
+        height: parseSize(value),
+      }
     }
     else if (selector === 'w' && value) {
-      ops.resize.width = parseSize(value)
+      ops.resize = {
+        ...ops.resize,
+        width: parseSize(value),
+      }
     }
     else if (selector === 'h' && value) {
-      ops.resize.height = parseSize(value)
+      ops.resize = {
+        ...ops.resize,
+        height: parseSize(value),
+      }
     }
 
     else if (selector === 'fit' && value) {
-      // @ts-ignore
-      ops.resize.fit = value
+      ops.resize = {
+        ...ops.resize,
+        // @ts-ignore
+        fit: value
+      }
     }
 
     else if (selector === 'blur') {
