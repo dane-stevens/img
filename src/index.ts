@@ -29,7 +29,8 @@ fastify.get('/img', {
     try {
       // @ts-ignore
       const { u, o } = request.query
-      const parts = o.split('_')
+      console.log({ u, o })
+      const parts = o?.split('_')
 
       const tokens = parts
       const ops = parseTokens(tokens)
@@ -229,7 +230,7 @@ function parseTokens(tokens: string) {
 }
 
 function parseToken(token: string) {
-  return token.split('-')
+  return token?.split('-')
 }
 
 function applySharpOps(sharpInstance: Sharp, ops: Ops) {
