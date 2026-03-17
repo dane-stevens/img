@@ -1,4 +1,4 @@
-# Image Transformation API
+# IMG - A 
 
 A high-performance image transformation service built with **Fastify** and **Sharp**. Transform images on the fly with resizing, format conversion, color adjustments, and more.  
 
@@ -16,6 +16,15 @@ Comma-separated list
 
 ## API Endpoints
 GET `/img?u=<IMAGE_URL>&o=<OPERATIONS>`
+
+### Query Parameters:
+
+u (required): URL of the source image. Must match allowed upstream origins.
+
+o (optional): Underscore-separated transformation operations.
+
+### Example:
+`GET /img?u=https://example.com/image.jpg&o=w-400_h-300_blur-5_webp`
 
 | Operation            | Description                                   | Example                 |
 | -------------------- | --------------------------------------------- | ----------------------- |
