@@ -1,4 +1,4 @@
-# IMG - A 
+# ImagePipe
 
 A high-performance image transformation service built with **Fastify** and **Sharp**. Transform images on the fly with resizing, format conversion, color adjustments, and more.  
 
