@@ -131,6 +131,7 @@ function parseTokens(tokens: string) {
   for (const token of tokens) {
 
     const [selector, value, restValues] = parseToken(token)
+    console.log({ selector, value, restValues })
 
     if (selector === 'size' && value) {
       ops.resize.width = parseSize(value)
